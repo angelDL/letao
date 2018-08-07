@@ -85,11 +85,12 @@ $(function(){
     $('#form').data("bootstrapValidator").resetForm(true);
   })
 
-
-
-
-
-
+})
+$(function(){
+  //检验插件初始化
+  $('#form').bootstrapValidator({
+    
+  })
 })
 // $(function() {
 //   // 检验插件初始化

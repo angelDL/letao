@@ -89,6 +89,7 @@ a:active {
   height: 180px;
 }
 .lt_aside .user {
+  height: 180px;
   padding-top: 30px;
 }
 .lt_aside .user img {
@@ -131,31 +132,31 @@ a:active {
 
 /* lt_main 开始 */
 .lt_main {
-  height: 1000px;
-  width: 100%;
+  height: 2000px;
   padding-left: 180px;
   padding-top: 50px;
+  background-color: pink;
   transition: all 1s;
 }
-.lt_main.hidemenu {
-  padding-left: 0px;
+.lt_main.hidemenu{
+  padding-left: 0;
 }
 
 .lt_topbar {
-  height: 50px;
-  width: 100%;
-  line-height: 50px;
-  background-color: #3C8DBC;
   position: fixed;
   top: 0;
   right: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #3C8DBC;
   padding-left: 180px;
   transition: all 1s;
-  z-index: 666;
 }
+
 .lt_topbar.hidemenu {
   padding-left: 0px;
 }
+
 
 .lt_topbar a {
   width: 50px;
@@ -193,6 +194,11 @@ a:active {
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 999;
+  transition: all 1s;
+}
+.lt_aside.hidemenu{
+  left:-180px;
 }
 .lt_aside .brand{
   width: 180px;
@@ -234,4 +240,31 @@ a:active {
 .lt_aside .nav a.current{
   background-color: #1D1F21;
   border-left: 2px solid #367FA9;
+}
+.lt_main{
+  padding-left: 180px;
+  padding-top: 50px;
+  height: 2000px;
+  background-color: pink;
+}
+.lt_topbar{
+  position: fixed;
+  left: 0;
+  top:0;
+  width: 100%;
+  height:50px ;
+  padding-left: 180px;
+  background-color: #367FA9;
+}
+
+.lt_topbar .lt_menu,
+.lt_topbar .lt_logout{
+    width: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+
+}
+.red{
+  color: #A94442;
 }
