@@ -135,7 +135,7 @@ a:active {
   height: 2000px;
   padding-left: 180px;
   padding-top: 50px;
-  background-color: pink;
+  /* background-color: pink; */
   transition: all 1s;
 }
 .lt_main.hidemenu{
@@ -267,4 +267,9 @@ a:active {
 }
 .red{
   color: #A94442;
+}
+.echarts_1,
+.echarts_2{
+  width:48% ;
+  height: 400px;
 }
